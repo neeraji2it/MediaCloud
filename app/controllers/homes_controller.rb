@@ -11,7 +11,7 @@ class HomesController < ApplicationController
   def cloud_services
   end
 
-  def design
+  def application_development
   end
 
   def security_services

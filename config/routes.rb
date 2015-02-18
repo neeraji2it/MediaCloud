@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #     get :about_us
   #     get :services
   #     get :cloud_services
-  #     get :design
+  #     get :application_development
   #     get :security_services
   #     get :contact
   #   end
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/about_us' => 'homes#about_us', as: 'about_us'
   get '/services' => 'homes#services', as: 'services'
   get '/cloud_services' => 'homes#cloud_services', as: 'cloud_services'
-  get '/design' => 'homes#design', as: 'design'
+  get '/application_development' => 'homes#application_development', as: 'application_development'
   get '/security_services' => 'homes#security_services', as: 'security_services'
   get '/contact' => 'homes#contact', as: 'contact'
 
