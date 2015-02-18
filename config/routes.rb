@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+  root 'homes#index'
+  
+  resources :homes do 
+    collection do 
+      get :about_us
+      get :services
+      get :cloud_services
+      get :design
+      get :security_services
+      get :contact
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
