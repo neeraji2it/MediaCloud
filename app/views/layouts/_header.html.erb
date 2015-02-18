@@ -64,22 +64,22 @@
         <!-- Menu Section -->
           <nav>
             <ul id="menu-menu" class="menu">
-            <li ><a href="/">Home</a></li>
-            <li class="current-menu-item current_page_item"><a href="/about_us">About</a>
+            <li class="<%= params[:action] == 'index' ?  ('current-menu-item current_page_item') : '' %>"><a href="/">Home</a></li>
+            <li class="<%= params[:action] == 'about_us' ?  ('current-menu-item current_page_item') : '' %>"><a href="/about_us">About</a>
             
            </li>
-           <li><a href="/services">Services</a>
+           <li class="<%= params[:action] == 'services' ?  ('current-menu-item current_page_item') : '' %>"><a href="/services">Services</a>
            
        </li>
-         <li><a  href="/cloud_services">Cloud Services</a> 
+         <li class="<%= params[:action] == 'cloud_services' ?  ('current-menu-item current_page_item') : '' %>"><a  href="/cloud_services">Cloud Services</a> 
           
        </li>
-       <li><a href="/application_development">Design & Development</a>
+       <li class="<%= params[:action] == 'application_development' ?  ('current-menu-item current_page_item') : '' %>"><a href="/application_development">Design & Development</a>
       
     </li>
     
-<li><a href="/security_services">Security Services</a></li>
-   <li><a href="/contact">Contact</a></li>
+  <li class="<%= params[:action] == 'security_services' ?  ('current-menu-item current_page_item') : '' %>"><a href="/security_services">Security Services</a></li>
+   <li class="<%= params[:action] == 'contact' ?  ('current-menu-item current_page_item') : '' %>"><a href="/contact">Contact</a></li>
  </li>
 </ul>
 </nav>
