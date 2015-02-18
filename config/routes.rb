@@ -2,16 +2,23 @@ Rails.application.routes.draw do
 
   root 'homes#index'
   
-  resources :homes do 
-    collection do 
-      get :about_us
-      get :services
-      get :cloud_services
-      get :design
-      get :security_services
-      get :contact
-    end
-  end
+  # resources :homes do 
+  #   collection do 
+  #     get :about_us
+  #     get :services
+  #     get :cloud_services
+  #     get :design
+  #     get :security_services
+  #     get :contact
+  #   end
+  # end
+
+  get '/about_us' => 'homes#about_us', as: 'about_us'
+  get '/services' => 'homes#services', as: 'services'
+  get '/cloud_services' => 'homes#cloud_services', as: 'cloud_services'
+  get '/design' => 'homes#design', as: 'design'
+  get '/security_services' => 'homes#security_services', as: 'security_services'
+  get '/contact' => 'homes#contact', as: 'contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
