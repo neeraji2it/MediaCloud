@@ -20,6 +20,24 @@ Rails.application.routes.draw do
   get '/security_services' => 'homes#security_services', as: 'security_services'
   get '/contact' => 'homes#contact', as: 'contact'
 
+  get '/cloud_architech' => 'homes#cloud_architech', as: 'cloud_architech'
+  get '/cloud_consultancy' => 'homes#cloud_consultancy', as: 'cloud_consultancy'
+  get '/cloud_saas' => 'homes#cloud_saas', as: 'cloud_saas'
+  get '/cloud_consult' => 'homes#cloud_consult', as: 'cloud_consult'
+
+
+  get '/product_development' => 'homes#product_development', as: 'product_development'
+  get '/saas_development' => 'homes#saas_development', as: 'saas_development'
+  get '/product_support' => 'homes#product_support', as: 'product_support'
+  get '/web_services_development' => 'homes#web_services_development', as: 'web_services_development'
+  get '/web_design_development' => 'homes#web_design_development', as: 'web_design_development'
+  get '/wireframe_development' => 'homes#wireframe_development', as: 'wireframe_development'
+
+
+  get '/security_cancel' => 'homes#security_cancel', as: 'security_cancel'
+  get '/security_legal' => 'homes#security_legal', as: 'security_legal'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
