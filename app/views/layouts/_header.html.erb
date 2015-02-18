@@ -71,14 +71,14 @@
            <li class="<%= params[:action] == 'services' ?  ('current-menu-item current_page_item') : '' %>"><a href="/services">Services</a>
            
        </li>
-         <li class="<%= params[:action] == 'cloud_services' ?  ('current-menu-item current_page_item') : '' %>"><a  href="/cloud_services">Cloud Services</a> 
+         <li class="<%= (params[:action] == 'cloud_services' || params[:action] == 'cloud_architech' || params[:action] == 'cloud_consultancy' || params[:action] == 'cloud_saas' || params[:action] == 'cloud_consult') ?  ('current-menu-item current_page_item') : '' %>"><a  href="/cloud_services">Cloud Services</a> 
           
        </li>
-       <li class="<%= params[:action] == 'application_development' ?  ('current-menu-item current_page_item') : '' %>"><a href="/application_development">Design & Development</a>
+       <li class="<%= (params[:action] == 'application_development' || params[:action] == 'product_development' || params[:action] == 'saas_development' || params[:action] == 'product_support' || params[:action] == 'web_services_development' || params[:action] == 'web_design_development' || params[:action] == 'wireframe_development') ?  ('current-menu-item current_page_item') : '' %>"><a href="/application_development">Design & Development</a>
       
     </li>
     
-  <li class="<%= params[:action] == 'security_services' ?  ('current-menu-item current_page_item') : '' %>"><a href="/security_services">Security Services</a></li>
+  <li class="<%= (params[:action] == 'security_services' || params[:action] == 'security_cancel' || params[:action] == 'security_legal') ?  ('current-menu-item current_page_item') : '' %>"><a href="/security_services">Security Services</a></li>
    <li class="<%= params[:action] == 'contact' ?  ('current-menu-item current_page_item') : '' %>"><a href="/contact">Contact</a></li>
  </li>
 </ul>
