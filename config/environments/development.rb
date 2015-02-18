@@ -40,8 +40,8 @@ Rails.application.configure do
     :enable_starttls_auto => true,
     :address => 'smtp.gmail.com',
     :port => '587',
-    :user_name => 'sunrisingunited@gmail.com',
-    :password => 'risingsun@123',
+    :user_name => 'mediacloud@gmail.com',
+    :password => 'mediacloud@123',
     :authentication => 'plain'
   }
 end
