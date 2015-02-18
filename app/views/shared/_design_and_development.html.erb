@@ -8,18 +8,18 @@ font-size: 14px;
 padding: 14px 18px 15px 22px; 
 width: 100%;">Desing & Development</a></li>
             
-            <li class="page_item page-item-294 current_page_item "><a href="/application_development"> Custom Application Development  <div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'application_development' ? ('page_item page-item-294 current_page_item') : '' %>"><a href="/application_development"> Custom Application Development  <div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
             
-            <li class="page_item page-item-296 "><a href="/product_development">Product Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+             <li class="<%= params[:action] == 'product_development' ? ('page_item page-item-296 current_page_item') : '' %>"><a href="/product_development">Product Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-299 "><a href="/saas_development">SAAS / PAAS / IAAS Development<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'saas_development' ? ('page_item page-item-299 current_page_item') : '' %>"><a href="/saas_development">SAAS / PAAS / IAAS Development<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-364 "><a  href="/product_support"> Product Support / Maintenance Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'product_support' ? ('page_item page-item-250 current_page_item') : '' %>"><a  href="/product_support"> Product Support / Maintenance Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-250 "><a href="/web_services_development">Web Services / API Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'web_services_development' ? ('page_item page-item-250 current_page_item') : '' %>"><a href="/web_services_development">Web Services / API Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-             <li class="page_item page-item-250 "><a href="/web_design_development"> Web Design / Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+             <li class="<%= params[:action] == 'web_design_development' ? ('page_item page-item-250 current_page_item') : '' %>"><a href="/web_design_development"> Web Design / Development Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
              
-               <li class="page_item page-item-250 "><a href="/wireframe_development">Wireframe and POC Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+               <li class="<%= params[:action] == 'wireframe_development' ? ('page_item page-item-250 current_page_item') : '' %>"><a href="/wireframe_development">Wireframe and POC Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
           </ul>
       </div>

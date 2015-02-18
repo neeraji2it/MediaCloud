@@ -8,14 +8,14 @@ font-size: 14px;
 padding: 15px 55px 15px 35px;
 width: 100%;">Cloud Services</a></li>
             
-            <li class="page_item page-item-294 current_page_item "><a href="/cloud_services">Who We Are <div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'cloud_services' ? ('page_item page-item-294 current_page_item') : '' %>"><a href="/cloud_services">Who We Are <div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-296 "><a href="/cloud_architech">Cloud Architecture and Design Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'cloud_architech' ? 'page_item page-item-296 current_page_item' : '' %>"><a href="/cloud_architech">Cloud Architecture and Design Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-299 "><a href="/cloud_consultancy">Cloud Consultancy Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'cloud_consultancy' ? 'page_item page-item-299 current_page_item' : '' %>"><a href="/cloud_consultancy">Cloud Consultancy Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
 
-            <li class="page_item page-item-364 "><a href="/cloud_saas">SAAS / PAAS / IAAS Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'cloud_saas' ? 'page_item page-item-364 current_page_item' : '' %>"><a href="/cloud_saas">SAAS / PAAS / IAAS Services<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
             
-            <li class="page_item page-item-250 "><a href="/cloud_consult">Cloud Consulting<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
+            <li class="<%= params[:action] == 'cloud_consult' ? 'page_item page-item-250 current_page_item' : '' %>"><a href="/cloud_consult">Cloud Consulting<div class="nav_arrow"><i class="moon-arrow-right-2"></i></div></a></li>
           </ul>
 </div>
