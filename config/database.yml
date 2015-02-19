@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: MediaCloud_production
-  username: MediaCloud
-  password: <%= ENV['MEDIACLOUD_DATABASE_PASSWORD'] %>
+  username: root
+  password: root
