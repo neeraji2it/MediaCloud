@@ -328,7 +328,7 @@ margin-top:9px;
 
 
 
-#testimonials {width:100% !important; margin-bottom:10px; !important;}
+#testimonials {width:100% !important; margin-bottom:10px !important;}
 
 #testimonials .testimon p { background:#fff;padding: 10px 15px;  color:#8a8a8a;  font-size:13px; font-style: italic; border:1px solid #ebebeb; margin:0px; }
 
@@ -632,7 +632,7 @@ border-top:1px solid #fff;
 
 
 
-.price_1_col ul li span.not{background:url('img/cross.png') center no-repeat; width:13px; height:13px; float:left; margin-right:10px}
+.price_1_col ul li span.hnot {background:url('img/cross.png') center no-repeat; width:13px; height:13px; float:left; margin-right:10px}
 
 
 
@@ -736,19 +736,11 @@ border-top:1px solid #fff;
 
 .price_1_col .header{
 
-
-
-    height:110px
-
-
+    height:110px;
 
     float: left;
 
-
-
     width: 100%;
-
-
 
 }
 

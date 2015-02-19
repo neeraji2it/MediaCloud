@@ -1719,7 +1719,7 @@ width: 343px;
 
   .comment .author{font-size:14px; font-weight:bold; color:#555; float:left; margin-right:15px;}
 
-  .comment-form-comment label{ margin-bottom:10px position:relative;}
+  .comment-form-comment label{ margin-bottom:10px; position:relative;}
 
   /* End Comments */
 
@@ -2469,7 +2469,7 @@ width: 343px;
 
   #portfolio-preview-items.two-cols .portfolio-item.circle{width:456px !important;}
 
-  #portfolio-preview-items.three-cols .portfolio-item.circle{width:296px; !important;}
+  #portfolio-preview-items.three-cols .portfolio-item.circle{width:296px !important;}
 
   #portfolio-preview-items.three-cols .portfolio-item.hexagonal{width:296px !important;}
 
@@ -2697,7 +2697,7 @@ width: 343px;
 
   box-shadow: inset 0 1px 13px 2px rgba(102,102,102,0.13);
 
-  }}
+  }
 
   .section-style .second_testimonial .arrow{display:none}
 
