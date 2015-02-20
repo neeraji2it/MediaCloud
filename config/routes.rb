@@ -2,16 +2,12 @@ Rails.application.routes.draw do
 
   root 'homes#index'
   
-  # resources :homes do 
-  #   collection do 
-  #     get :about_us
-  #     get :services
-  #     get :cloud_services
-  #     get :application_development
-  #     get :security_services
-  #     get :contact
-  #   end
-  # end
+   resources :homes do 
+     collection do 
+       get :contact_01
+       post :contact
+  end
+   end
 
   get '/about_us' => 'homes#about_us', as: 'about_us'
   get '/services' => 'homes#services', as: 'services'
@@ -36,7 +32,10 @@ Rails.application.routes.draw do
 
   get '/security_cancel' => 'homes#security_cancel', as: 'security_cancel'
   get '/security_legal' => 'homes#security_legal', as: 'security_legal'
-
+  get '/privacy_policy' => 'homes#privacy_policy', as: 'privacy_policy'
+  get '/terms_conditions' => 'homes#terms_conditions', as: 'terms_conditions'
+  get '/shipping' => 'homes#shipping', as: 'shipping'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
