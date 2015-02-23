@@ -17,11 +17,17 @@ class HomesController < ApplicationController
   def security_services
   end
 
-
-  def contact
+  def contact_01
   end
 
-  
+  def contact
+    if params[:name].present? and params[:email].present? and params[:message].present? and params[:subject].present?
+     ContactMailer.comment_contact(params[:name], params[:email], params[:subject], params[:message]).deliver
+    respond_to do |format|
+      format.js
+    end
+    end    
+  end
 
   def cloud_architech
   end
@@ -62,25 +68,7 @@ class HomesController < ApplicationController
   def security_legal
   end
 
-  def contact_01
-     unless request.get?
-     params[:name_error] = "Your name can't be blank" if params[:name].to_s.blank?
-     params[:email_error] = "Your email can't be blank" if params[:email].to_s.blank?
-      
-     params[:message_error] = "Message can't be blank." if params[:message].to_s.blank?
-     @status = false
-      if !params[:name].to_s.blank? || !params[:email].to_s.blank? || !params[:subject].to_s.blank? || !params[:message].to_s.blank?
-       if ContactMailer.comment_contact(params[:name], params[:email], params[:subject], params[:message]).deliver
-         flash[:success] = "Your message has been successfully sent"
-            params[:name] = params[:email] = params[:subject] = params[:message] =  " "
-            @status = true
-          else
-            flash[:danger] = "Error while sending email. Please submit again"
-            redirect_to :back
-          end
-    end
-    end
-  end
+ 
 
   def privacy_policy
   end
@@ -89,6 +77,29 @@ class HomesController < ApplicationController
   end
 
   def shipping
+  end
+
+  def quick_contact
+  end
+
+  def contact_us
+    unless request.get?
+     params[:name_error] = "Your name can't be blank" if params[:name].to_s.blank?
+     params[:email_error] = "Your email can't be blank" if params[:email].to_s.blank?
+      
+     params[:message_error] = "Message can't be blank." if params[:message].to_s.blank?
+    # @status = false
+      if !params[:name].to_s.blank? || !params[:email].to_s.blank? || !params[:subject].to_s.blank? || !params[:message].to_s.blank?
+       if ContactMailer.comment_contact(params[:name], params[:email], params[:subject], params[:message]).deliver
+         flash[:success] = "Your message has been successfully sent"
+            params[:name] = params[:email] = params[:subject] = params[:message] =  " "
+            #@status = true
+          else
+            flash[:danger] = "Error while sending email. Please submit again"
+            redirect_to :back
+          end
+    end
+    end
   end
 
 end

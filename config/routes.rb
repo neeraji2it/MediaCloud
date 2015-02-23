@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
   root 'homes#index'
-  
    resources :homes do 
      collection do 
        get :contact_01
        post :contact
+       get :quick_contact
+       post :contact_us
   end
    end
 

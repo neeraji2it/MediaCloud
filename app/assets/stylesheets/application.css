@@ -12,3 +12,6 @@
  *
  *= require_self
  */
+.myButton {
+    width: 150px;
+}
