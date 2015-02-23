@@ -21,7 +21,7 @@ class HomesController < ApplicationController
   end
 
   def contact
-    if params[:name].present? and params[:email].present? and params[:message].present? and params[:subject].present?
+    if params[:name].present? and params[:email].present? and params[:subject].present? and params[:message].present?
      ContactMailer.comment_contact(params[:name], params[:email], params[:subject], params[:message]).deliver
     respond_to do |format|
       format.js
@@ -67,8 +67,6 @@ class HomesController < ApplicationController
 
   def security_legal
   end
-
- 
 
   def privacy_policy
   end
