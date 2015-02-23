@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "mediacloud.co.in"
 
   def comment_contact(name, email, subject, message)
     @name = name
