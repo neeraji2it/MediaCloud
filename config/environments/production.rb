@@ -82,7 +82,7 @@ config.action_mailer.default_url_options = { :host => 'mediacloud.co.in' }
     config.action_mailer.smtp_settings = {
         :address              => "smtp.gmail.com",
         :port                 => 587,
-        #    :domain               => 'gmail.com',
+        :domain               => 'gmail.com',
         :user_name            => 'mediacloud3@gmail.com',
         :password             => 'mediacloud@123',
         :authentication       => 'plain',
