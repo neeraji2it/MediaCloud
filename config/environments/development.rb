@@ -41,7 +41,7 @@ Rails.application.configure do
     :address => 'smtp.gmail.com',
     :port => '587',
     :user_name => 'mediacloud3@gmail.com',
-    :password => 'mediacloud@123',
+    :password => 'mediacloud123',
     :authentication => 'plain'
   }
 end
