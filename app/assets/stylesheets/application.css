@@ -12,6 +12,9 @@
  *
  *= require_self
  */
-.myButton {
+
+/*.myButton {
     width: 150px;
-}
+}*/
+
+footer .widget_contact_info li.user1{background: url('/assets/img/user.png') left center no-repeat}
