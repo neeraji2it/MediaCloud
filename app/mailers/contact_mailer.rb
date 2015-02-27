@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
     @email = email
     @subject = subject
     @message = message
-    mail(:to =>"mediacloudservices@gmail.com", :subject => "Contact Information")
+    mail(:to =>"crystal.badu@gmail.com", :subject => "Contact Information")
   end
 end
