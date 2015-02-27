@@ -7,10 +7,12 @@
     <td>Contact Email:</td>
     <td> <%= @email %></td>
   </tr>
+  <% if @subject != "Hide" %>
 <tr>
     <td>Subject:</td>
     <td><%= @subject %></td>
   </tr>
+  <% end %>
   <tr>
     <td>Comment:</td>
     <td><%= @message %></td>

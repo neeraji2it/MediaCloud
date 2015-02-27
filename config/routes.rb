@@ -5,7 +5,6 @@ Rails.application.routes.draw do
      collection do 
        get :contact_01
        post :contact
-       get :quick_contact
        post :contact_us
   end
    end

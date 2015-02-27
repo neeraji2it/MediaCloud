@@ -29,6 +29,7 @@ class HomesController < ApplicationController
     end    
   end
 
+
   def cloud_architech
   end
 
