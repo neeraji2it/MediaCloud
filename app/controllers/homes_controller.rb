@@ -14,8 +14,11 @@ class HomesController < ApplicationController
   def application_development
   end
 
-  def security_services
+  def products
+
   end
+
+
 
   def contact_01
   end
@@ -63,7 +66,7 @@ class HomesController < ApplicationController
   end
 
 
-  def security_cancel
+  def chti
   end
 
   def security_legal

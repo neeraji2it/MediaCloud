@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/services' => 'homes#services', as: 'services'
   get '/cloud_services' => 'homes#cloud_services', as: 'cloud_services'
   get '/application_development' => 'homes#application_development', as: 'application_development'
-  get '/security_services' => 'homes#security_services', as: 'security_services'
+  get '/products' => 'homes#products', as: 'products'
   get '/contact' => 'homes#contact', as: 'contact'
 
   get '/cloud_architech' => 'homes#cloud_architech', as: 'cloud_architech'
@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   get '/wireframe_development' => 'homes#wireframe_development', as: 'wireframe_development'
 
 
-  get '/security_cancel' => 'homes#security_cancel', as: 'security_cancel'
+  get '/chti' => 'homes#chti', as: 'chti'
   get '/security_legal' => 'homes#security_legal', as: 'security_legal'
   get '/privacy_policy' => 'homes#privacy_policy', as: 'privacy_policy'
   get '/terms_conditions' => 'homes#terms_conditions', as: 'terms_conditions'
