@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 
 gem 'rvm-capistrano'
 gem 'capistrano-ext'
+
+gem "sitemap_generator"
