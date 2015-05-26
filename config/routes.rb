@@ -30,7 +30,8 @@ Rails.application.routes.draw do
   get '/wireframe_development' => 'homes#wireframe_development', as: 'wireframe_development'
 
 
-  get '/chti' => 'homes#chti', as: 'chti'
+  get '/chti' => 'homes#chti', as: 'chti' 
+  get '/category_ebooks' => 'homes#category_ebooks', as: 'category_ebooks'
   get '/security_legal' => 'homes#security_legal', as: 'security_legal'
   get '/privacy_policy' => 'homes#privacy_policy', as: 'privacy_policy'
   get '/terms_conditions' => 'homes#terms_conditions', as: 'terms_conditions'

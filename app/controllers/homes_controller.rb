@@ -67,6 +67,9 @@ class HomesController < ApplicationController
 
 
   def chti
+  end 
+
+  def category_ebooks
   end
 
   def security_legal
