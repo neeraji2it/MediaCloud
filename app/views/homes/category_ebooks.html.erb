@@ -31,17 +31,29 @@ h3{
 
                     <div class="span9">
          <div class="themeple_sc"><div class="header">
-         <h3>eBooks</h3><span class="border_style_color"></span></div></div>
+         <h3>Category eBooks</h3><span class="border_style_color"></span></div></div>
 <div class="themeple_sc">
 <div class="themeple_blockquote">
 
-<p>Learning and Sharing using our platform is a quick and efficient way. you can have all your questions answered by friends and teachers, Quickly refer and post your queries to teachers and classmates</p>
-<%= image_tag  "assets/web.jpg" %>
-
-<%= image_tag  "assets/windows.jpg" %>
-<%= image_tag  "assets/Ruby On Rails.jpg" %>
 
 
+<div class="span12">
+<div class="span3">
+<%= image_tag  "assets/web.jpg" ,:class=>"img_algn" %>
+<button >Download</button>
+</div>
+<div class="span3">
+<%= image_tag  "assets/windows.jpg",:class=>"img_algn"%>
+<button >Download</button>
+</div>
+<div class="span3">
+<%= image_tag  "assets/Ruby On Rails.jpg",:class=>"img_algn" %>
+<button >Download</button>
+</div>
+</div>
+</div>
+
+<%#= image_tag @image.avatar.url(:thumb) %>
 
 </div></div>
 <p>&nbsp;</p>
@@ -57,3 +69,15 @@ h3{
 
 <!-- Footer -->
     </div>
+<style type="text/css">
+    .img_algn{ height: auto;
+    width: 100%;}
+</style>>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+       alert("coming soon")
+    });
+});
+
+</script>
