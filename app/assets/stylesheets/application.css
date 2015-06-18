@@ -36,6 +36,6 @@ footer .widget_contact_info li.user1{background: url('/assets/img/user.png') lef
 .captcha-input{
   width: 200px !important;
 }
-.captcha-error-msg{
+.error{
   color: red;
 }

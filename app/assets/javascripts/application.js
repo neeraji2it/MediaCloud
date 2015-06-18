@@ -32,11 +32,33 @@ $(document).on("click", "#contact-button", function(){
   };
 
   if (result != res_input) {
-    $(".captcha-error-msg").text("Are you human? please enter captcha result");
+    $(".captcha-error-msg").text("Are you a human? please enter captcha result");
+    return false;
   } else {
     $(".captcha-error-msg").text("");
   };
+});
 
+$(document).on("click", "#quick-contact-button", function(){
+  var first     = $("#quick-captcha-first").text().trim(),
+      symbol    = $("#quick-captcha-middle").text().trim(),
+      last      = $("#quick-captcha-last").text().trim(),
+      res_input = $("#quick_captcha_result").val(),
+      result;
 
-  return false;
+  if (symbol==="+") {
+    result = parseInt(first) + parseInt(last);
+  } else if (symbol==="-") {
+    result = parseInt(first) - parseInt(last);
+  };
+
+  console.log(result)
+  console.log(res_input)
+
+  if (result != res_input) {
+    $(".quick-captcha-error-msg").text("Are you a human? please enter captcha result");
+    return false;
+  } else {
+    $(".quick-captcha-error-msg").text("");
+  };
 });
