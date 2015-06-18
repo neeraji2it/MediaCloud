@@ -18,8 +18,24 @@
               <%= text_field_tag :subject, params[:subject],:placeholder => "Subject", :class=>"span6", required: true %>
               <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
             <%= text_area_tag :message, params[:message],:placeholder => "Content" , :class=>"span12", :cols=>"40",:rows=>"7", required: true %>
+            <div class="captcha-wrapper">
+              <span id="captcha-first">
+                <%= captcha_number %>
+              </span>
+              <span id="captcha-middle">
+                <%= captcha_symbol %>
+              </span>
+              <span id="captcha-last">
+                <%= captcha_number %>
+              </span>
+              <span> = </span>
+            </div>
+            <div class="captcha-error-msg"></div>
+            <%= text_field_tag :captcha_result, nil, placeholder: 'result', class: 'captcha-input' %>
+            <br/>
             <div class="span3">
-            <%= submit_tag :submit, :id => "submit" ,:class=>"span3", :class=>"custom_btn" %></div>
+              <%= submit_tag :submit, :id => "contact-button" ,:class=>"span3", :class=>"custom_btn" %>
+            </div>
   <% end %>
 
 <style>

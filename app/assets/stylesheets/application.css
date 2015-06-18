@@ -18,3 +18,24 @@
 }*/
 
 footer .widget_contact_info li.user1{background: url('/assets/img/user.png') left center no-repeat}
+
+.captcha-wrapper{
+  background: url('/assets/captcha.JPG');
+  width: 200px;
+  height: 80px;
+  margin: 10px 0;
+  display: table-cell;
+  vertical-align:middle;
+  text-align: center;
+}
+.captcha-wrapper span{
+  color: #15A80B;
+  font-size: 4em;
+  font-weight: bolder;
+}
+.captcha-input{
+  width: 200px !important;
+}
+.captcha-error-msg{
+  color: red;
+}

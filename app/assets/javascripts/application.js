@@ -14,3 +14,29 @@
 //= require jquery_ujs
 //= require jquery.validate
 //= require jquery.validate.additional-methods
+
+
+
+
+$(document).on("click", "#contact-button", function(){
+  var first     = $("#captcha-first").text().trim(),
+      symbol    = $("#captcha-middle").text().trim(),
+      last      = $("#captcha-last").text().trim(),
+      res_input = $("#captcha_result").val(),
+      result;
+
+  if (symbol==="+") {
+    result = parseInt(first) + parseInt(last);
+  } else if (symbol==="-") {
+    result = parseInt(first) - parseInt(last);
+  };
+
+  if (result != res_input) {
+    $(".captcha-error-msg").text("Are you human? please enter captcha result");
+  } else {
+    $(".captcha-error-msg").text("");
+  };
+
+
+  return false;
+});
