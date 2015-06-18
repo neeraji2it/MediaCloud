@@ -13,20 +13,20 @@
  <%= form_tag({:action => 'contact', :controller => 'homes'},:remote => true, :class => "standard-form row-fluid",:name=>"contactForm", :method=>"post", :id => "contact_form") do %>
               <%= text_field_tag :name, params[:name],:placeholder => "Name", :class=>"span6", required: true %>
             
-              <%= text_field_tag :email, params[:email],:placeholder => "E-mail" ,:class=>"span6", required: true %>
+              <%= email_field_tag :email, params[:email],:placeholder => "E-mail" ,:class=>"span6", required: true %>
 
               <%= text_field_tag :subject, params[:subject],:placeholder => "Subject", :class=>"span6", required: true %>
               <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
             <%= text_area_tag :message, params[:message],:placeholder => "Content" , :class=>"span12", :cols=>"40",:rows=>"7", required: true %>
             <div class="captcha-wrapper">
               <span id="captcha-first">
-                <%= captcha_number %>
+                <%= captcha_number_max %>
               </span>
               <span id="captcha-middle">
                 <%= captcha_symbol %>
               </span>
               <span id="captcha-last">
-                <%= captcha_number %>
+                <%= captcha_number_min %>
               </span>
               <span> = </span>
             </div>
