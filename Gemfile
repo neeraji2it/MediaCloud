@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'rvm-capistrano'
-gem 'capistrano-ext'
-
 gem "sitemap_generator"
+
+gem 'capistrano', '~> 3.4.0'
+gem 'capistrano-rvm'
